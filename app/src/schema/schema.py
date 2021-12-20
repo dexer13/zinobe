@@ -3,5 +3,5 @@ from .schemas import SqliteSchema, BaseSchema
 
 class Schema:
     @staticmethod
-    def get_connection() -> BaseSchema:
+    def get_schema() -> BaseSchema:
         return SqliteSchema()
