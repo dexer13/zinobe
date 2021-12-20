@@ -105,7 +105,7 @@ cd project
 poetry update
 ```
 ***
-## Tests
+### Tests
 Run tests
 ```shell script
 coverage run -m pytest
@@ -120,7 +120,7 @@ This command generate a json file and a database.
 - **json file** app/tmp/json/data.json
 - **database** app/src/schema/db/countries_review.db
 ***
-### Autor
+### Author
 The project was developed by:
  - Denis González [GitHub](https://github.com/dexer13) [LinkedIn](https://www.linkedin.com/in/denis-eduardo-isidro-gonzalez-428a51210/)
 
