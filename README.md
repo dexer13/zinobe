@@ -2,7 +2,7 @@
 Script to export rest_countries result to 
 json and save review result on sqlite.
 ***
-## Índice
+## Contents
 1. [Features](#features)
 2. [Stack](#stack)
 3. [Design](#design)
