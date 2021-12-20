@@ -8,6 +8,9 @@ authors = ["denis <deniseduardoisidrogonzalez@gmail.com>"]
 python = "^3.8"
 pandas = "^1.3.5"
 python-restcountries = "^2.0.0"
+pytest = "^6.2.5"
+coverage = "^6.2"
+pytest-mock = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
 

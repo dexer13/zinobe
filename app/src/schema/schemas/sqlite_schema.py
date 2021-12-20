@@ -6,13 +6,18 @@ from .base_schema import BaseSchema
 
 class SqliteSchema(BaseSchema):
     connection: Connection = None
-    def get_connection(self) -> Connection:
+
+    def __init__(self, database_name: str = 'countries_review'):
         try:
             database_url: str = \
                 f'{pathlib.Path(__file__).parent.parent.absolute()}' \
-                f'/db/countries_review.db'
+                f'/db/{database_name}.db'
             self.connection = sqlite3.connect(database=database_url)
-            print(sqlite3.version)
+        except Error as e:
+            print(e)
+
+    def get_connection(self) -> Connection:
+        try:
             return self.connection
         except Error as e:
             print(e)
